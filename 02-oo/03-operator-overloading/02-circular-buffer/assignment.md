@@ -52,8 +52,8 @@ We could simply define a method:
 
 ```python
 class CircularBuffer:
-    def size():
-        ...
+    def size(self):
+        # ...
 ```
 
 However, Python would prefer you to stick to the standard way of doing things, namely using `len()`.
@@ -106,10 +106,10 @@ You can have your own classes respond to `[]` by defining the `__getitem__` dund
 ```python
 class CircularBuffer:
     def __getitem__(self, index):
-        ...
+        # ...
 ```
 
-# Task
+## Task
 
 Implement the `CircularBuffer` class as described above.
 
